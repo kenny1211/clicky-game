@@ -4,10 +4,14 @@ const styles = {
   jumbotron: {
     backgroundImage: "url(https://i.imgur.com/aEwNXVn.jpg)",
     minHeight: "30vh",
-    backgroundPosition: "center top",
     display: "flex",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center"
+  },
+  instructions: {
+    fontSize: "large"
   }
 }
 
@@ -15,9 +19,7 @@ const Jumbotron = () => (
   <div>
     <div className="jumbotron jumbotron-fluid text-center" style={styles.jumbotron}>
     </div>
-    <hr className="my-4">
-    Click on an image to earn points, but don't click any more than once! 
-    </hr>
+    <p className="text-center my-0">Click on an image to earn points, but don't click any more than once!</p>
   </div>
 )
 
