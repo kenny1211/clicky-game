@@ -24,7 +24,7 @@ const ImageCard = (props) => (
   <div 
     style={styles.card} 
     value={props.id}
-    onClick={() => props.handleClicked(props.id)}
+    onClick={() => props.handleUserPick(props.id)}
   >
     <div style={styles.imageContainer}>
       <img alt={props.name} src={props.image} style={styles.imageStyle} />
