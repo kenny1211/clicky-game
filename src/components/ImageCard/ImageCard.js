@@ -2,11 +2,16 @@ import React from "react";
 
 const styles = {
   card: {
-    height: 200,
-    width: 200,
+    height: 175,
+    width: 175,
     alignContent: "center",
     textAlign: "center",
-    position: "relative"
+    position: "70%",
+    boxShadow: "0 3px 6px #999, 0 3px 6px #999",
+    borderRadius: "3px",
+    border: "5px solid #f1f1f1",
+    margin: 10,
+    cursor: "pointer"
   },
   imageContainer: {
     height: "100%",
@@ -20,7 +25,9 @@ const styles = {
   }
 }
 
-const ImageCard = (props) => (
+const ImageCard = (props) => {
+
+  return (
   <div 
     style={styles.card} 
     value={props.id}
@@ -30,6 +37,7 @@ const ImageCard = (props) => (
       <img alt={props.name} src={props.image} style={styles.imageStyle} />
     </div> 
   </div>
-)
+  )
+}
 
 export default ImageCard;
